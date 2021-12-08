@@ -23,7 +23,7 @@
                         R$ {{$product->price}}
                     </div>
                     <div class="flex justify-center mb-2 hover:text-gray-400">
-                        <button>Comprar</button>
+                        <button>Ver produto</button>
                     </div>
                 </a>
             </div> 
