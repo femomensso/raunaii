@@ -14,7 +14,7 @@
             <div class="border-b hover:shadow-md">
                 <a href="/produtos/{{$product->slug}}">
                     <div class="flex justify-center mb-2">
-                        <img class="object-fill h-60 w-60" src="{{ asset('storage/' . $product->image)}}" alt="Produto 1">
+                        <img class="object-fill h-60 w-60" src="{{Storage::disk('s3')->temporaryUrl($product->image, '+2 minutes')}}" alt="Produto">
                     </div>
                     <div class="flex justify-center text-center px-2 mb-2">
                         {{$product->name}}

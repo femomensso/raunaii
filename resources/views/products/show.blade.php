@@ -5,7 +5,7 @@
     <section class="container mx-auto px-2 mb-4 border-t">
         <div class="grid grid-cols-1 md:grid-cols-5 gap-4 my-4">
             <div class="col-span-3 p-8 ">
-                <img class="object-cover w-full h-96 rounded-md" src="{{asset('storage/' . $product->image)}}" alt="Produto 1">
+                <img class="object-cover w-full h-96 rounded-md" src="{{Storage::disk('s3')->temporaryUrl($product->image, '+2 minutes')}}" alt="Produto 1">
             </div>
             
             <div class="col-span-2 justify-center mb-2">

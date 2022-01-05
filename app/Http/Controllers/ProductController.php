@@ -45,7 +45,7 @@ class ProductController extends Controller
             'image' => 'required|image'
         ]);
 
-        $attributes['image'] = request()->file('image')->store("images");
+        $attributes['image'] = request()->file('image')->store("images", 's3');
 
         Product::create($attributes);
 
@@ -84,7 +84,7 @@ class ProductController extends Controller
         ]);
 
         if (array_key_exists('image', $attributes)) {
-            $attributes['image'] = request()->file('image')->store("images");
+            $attributes['image'] = request()->file('image')->store("images", 's3');
         }        
         
         $product->update($attributes);
