@@ -8,7 +8,7 @@
                         Cadastrar
                     </h2>                    
                 </div>
-                <form class="mt-8 space-y-4" action="/admin/produtos/cadastrar" method="POST" enctype="multipart/form-data">
+                <form class="mt-8 space-y-4" action={{ url('/admin/produtos/cadastrar')}} method="POST" enctype="multipart/form-data">
                 @csrf                    
                     <div class="pt-4">
                         <div>
