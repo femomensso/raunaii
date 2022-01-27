@@ -1,8 +1,9 @@
 <footer class="bg-gray-50">
-    <div class=" h-32 px-4 flex justify-between items-center">            
-        <div class="m-2 space-y-2">
+    <div class="px-4 flex justify-between items-center">            
+        <div class="m-2 mb-6 space-y-2 ">
             <p class="font-semibold flex">Institucional</p>
-            <a href="#" class="hover:text-gray-400 flex">Sobre Nós</a>
+            <a class="text-gray-400 flex">Sobre Nós</a>
+            <p class="text-sm">Loja on-line de acessórios artesanais feitos com muito amor a partir de ideias criativas, onde você também pode criar o seu do jeitinho que quiser.</p>
         </div>
         @auth
             @if (auth()->user()->email == "femomensso@gmail.com")

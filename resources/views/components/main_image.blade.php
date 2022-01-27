@@ -1,3 +1,6 @@
-<div class="bg-center bg-cover h-80 w-full mb-4" style="background-image: url(https://i.pinimg.com/736x/64/3b/73/643b7330c9c2fe5bbb6a62810ee51b2c.jpg)">
+<div class="bg-center bg-cover h-80 w-full mb-4">
+    <img class="h-80 mx-auto md:w-2/3" src="{{Storage::disk('s3')->temporaryUrl('images/capa.jpeg', '+2 minutes')}}" alt="Produto">
 </div>
-<!-- fim img principal -->
+
+
+
